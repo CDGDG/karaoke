@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
+    <width>1001</width>
     <height>700</height>
    </rect>
   </property>
@@ -18,11 +18,11 @@
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="main_page">
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -92,8 +92,8 @@ border: none;
 border-radius:20px;</string>
              </property>
              <property name="text">
-              <string>최신
-차트</string>
+              <string>이 달의
+신곡</string>
              </property>
             </widget>
            </item>
@@ -189,6 +189,18 @@ border-radius:20px;</string>
       <widget class="QWidget" name="popular_page">
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
+         <widget class="QPushButton" name="return_btn_2">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 030</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>돌아가기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QLabel" name="label">
           <property name="font">
            <font>
@@ -216,8 +228,14 @@ color: rgb(255, 255, 255);</string>
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 040</family>
+            <pointsize>24</pointsize>
+           </font>
+          </property>
           <property name="text">
-           <string> 순위    번호                         제목                  가수</string>
+           <string>   순위                            제목                              가수</string>
           </property>
          </widget>
         </item>
@@ -237,7 +255,7 @@ color: rgb(255, 255, 255);</string>
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>962</width>
+             <width>963</width>
              <height>4000</height>
             </rect>
            </property>
@@ -266,7 +284,7 @@ color: rgb(255, 255, 255);</string>
                </size>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 203, 203, 255), stop:0.142045 rgba(240, 218, 196, 255), stop:0.289773 rgba(225, 232, 202, 255), stop:0.431818 rgba(209, 223, 217, 255), stop:0.573864 rgba(211, 203, 222, 255), stop:0.715909 rgba(226, 199, 227, 255), stop:0.857955 rgba(231, 194, 219, 255), stop:1 rgba(186, 195, 237, 255));</string>
+               <string notr="true">QFrame{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 203, 203, 255), stop:0.142045 rgba(240, 218, 196, 255), stop:0.289773 rgba(225, 232, 202, 255), stop:0.431818 rgba(209, 223, 217, 255), stop:0.573864 rgba(211, 203, 222, 255), stop:0.715909 rgba(226, 199, 227, 255), stop:0.857955 rgba(231, 194, 219, 255), stop:1 rgba(186, 195, 237, 255));}</string>
               </property>
               <property name="frameShape">
                <enum>QFrame::StyledPanel</enum>
@@ -299,11 +317,303 @@ color: rgb(255, 255, 255);</string>
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="recent_page">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QPushButton" name="return_btn_3">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 030</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>돌아가기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 050</family>
+            <pointsize>26</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>이 달의 신곡</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 040</family>
+            <pointsize>24</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>   번호                                   제목                              가수</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>963</width>
+             <height>5200</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="recent_frame">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>5200</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 203, 203, 255), stop:0.142045 rgba(240, 218, 196, 255), stop:0.289773 rgba(225, 232, 202, 255), stop:0.431818 rgba(209, 223, 217, 255), stop:0.573864 rgba(211, 203, 222, 255), stop:0.715909 rgba(226, 199, 227, 255), stop:0.857955 rgba(231, 194, 219, 255), stop:1 rgba(186, 195, 237, 255));}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="title_page">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QPushButton" name="return_btn_4">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 030</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>돌아가기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 050</family>
+            <pointsize>26</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>제목 검색</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="title_edit">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>963</width>
+             <height>5200</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="title_frame">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>5200</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 203, 203, 255), stop:0.142045 rgba(240, 218, 196, 255), stop:0.289773 rgba(225, 232, 202, 255), stop:0.431818 rgba(209, 223, 217, 255), stop:0.573864 rgba(211, 203, 222, 255), stop:0.715909 rgba(226, 199, 227, 255), stop:0.857955 rgba(231, 194, 219, 255), stop:1 rgba(186, 195, 237, 255));}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="play_page">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QPushButton" name="return_btn">
+          <property name="text">
+           <string>돌아가기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QWebEngineView" name="youtube_view">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
