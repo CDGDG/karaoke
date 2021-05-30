@@ -17,6 +17,7 @@ popular_ui = "./karaoke_popular.ui"
 
 popular_site = 'https://www.tjmedia.co.kr/tjsong/song_monthPopular.asp'
 recent_site = 'http://www.tjmedia.co.kr/tjsong/song_monthNew.asp'
+search_site = 'http://www.tjmedia.co.kr/tjsong/song_search.asp'
 
 DEVELOPER_KEY = "AIzaSyCxCQR3XfJdM13CzN3IIEQOuiSPq6ocoRg"
 YOUTUBE_API_SERVICE_NAME="youtube"
@@ -99,7 +100,7 @@ class Karaoke(QMainWindow):
         pass
 
     def enter(self):
-
+        rq = requests.get(search_site).text
 
     def make_frame(self,number,song):
         newFrame = QFrame();newFrame.setStyleSheet('QFrame{background-color:None;border: 2px solid rgb(255,255,255);}')
@@ -132,7 +133,7 @@ class Song():
             part="snippet",
             maxResults=1
         ).execute()
-        view.setUrl(QUrl('https://www.youtube.com/watch?v={}?autoplay=0'.format(search_response['items'][0]['id']['videoId'])))
+        view.setUrl(QUrl('https://www.youtube.com/watch?v={}?autoplay=1'.format(search_response['items'][0]['id']['videoId'])))
 
 
 
