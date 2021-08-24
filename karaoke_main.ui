@@ -22,7 +22,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="main_page">
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -490,6 +490,12 @@ color: rgb(255, 255, 255);</string>
             <height>50</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 040</family>
+            <pointsize>28</pointsize>
+           </font>
+          </property>
          </widget>
         </item>
         <item>
@@ -509,7 +515,7 @@ color: rgb(255, 255, 255);</string>
              <x>0</x>
              <y>0</y>
              <width>963</width>
-             <height>5200</height>
+             <height>531</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -533,7 +539,7 @@ color: rgb(255, 255, 255);</string>
               <property name="minimumSize">
                <size>
                 <width>0</width>
-                <height>5200</height>
+                <height>0</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -546,6 +552,134 @@ color: rgb(255, 255, 255);</string>
                <enum>QFrame::Raised</enum>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="singer_page">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QPushButton" name="return_btn_5">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 030</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>돌아가기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 050</family>
+            <pointsize>26</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>가수 검색</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="singer_edit">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>210 옴니고딕 040</family>
+            <pointsize>28</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea_4">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>963</width>
+             <height>531</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="singer_frame">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 203, 203, 255), stop:0.142045 rgba(240, 218, 196, 255), stop:0.289773 rgba(225, 232, 202, 255), stop:0.431818 rgba(209, 223, 217, 255), stop:0.573864 rgba(211, 203, 222, 255), stop:0.715909 rgba(226, 199, 227, 255), stop:0.857955 rgba(231, 194, 219, 255), stop:1 rgba(186, 195, 237, 255));}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
                <property name="spacing">
                 <number>0</number>
                </property>
